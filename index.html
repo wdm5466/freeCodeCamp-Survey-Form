@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>World History Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">World History Survey</h1>
+        <p id="description"><strong>Directions:</strong> <em>Take this survey to judge the merits of Mr. Moir's World History course.</em></p>
+      </header>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Name<input id="name" type="text" required placeholder="Enter Your Name" value=""></input></label>
+          <label id="email-label">Email<input id="email" type="email" required placeholder="Enter Your Email" value=""></input></label>
+          <label id="number-label">Grade Level<input id="number" type="number" min="9" max="12" placeholder="Grade" value="Grade Level"></input></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">Would you recommend this course?</label>
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Recommend</option>
+            <option value="2">Don't Recommend</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label>Favorite Unit</label>
+          <div class="units">
+           <label><input type="radio" name="units" value="Unit 1">Unit 1</label>
+            <label><input type="radio" name="units" value="Unit 2">Unit 2</label>
+            <label><input type="radio" name="units" value="Unit 3">Unit 3</label>
+            <label><input type="radio" name="units" value="Unit 4">Unit 4</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label>What projects did you enjoy?
+            <div class="inline">
+              <input type="checkbox" value="Project-1">Project 1
+            </div>
+            <div class="inline">
+              <input type="checkbox" value="Project-2">Project 2
+            </div>
+            <div class="inline">
+             <input type="checkbox" value="Project-3">Project 3
+            </div>
+          </label>
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Additional Comments..."></textarea>
+          <button id="submit" type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
